@@ -1,7 +1,11 @@
 // src/App.jsx
-import { use } from "react";
+
 import { useState, useEffect } from "react";
 import * as videoService from './services/videoService';
+
+import VideoList from "./components/VideoList/VideoList";
+
+
 
 
 const App = () => {
@@ -22,7 +26,11 @@ const App = () => {
     featuredVideos();
   }, []);
 
-  return <h1>Hello world!</h1>;
+  return (
+    <>
+      <VideoList videos={videos} />
+    </>
+  );
 };
 
 export default App;
