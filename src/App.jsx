@@ -1,11 +1,12 @@
 // src/App.jsx
 
 const App = () => {
-
+  const todo = { text: 'A brand new task', done: true };
   return (
     <>
-      <h1>Hello, world!</h1>
-      <h2>Hello universe</h2>
+      <h1>JavaScript in JSX</h1>
+      <p>{todo.text}</p>
+      
     </>
   );
 };
